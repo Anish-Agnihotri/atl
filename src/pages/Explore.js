@@ -1,9 +1,10 @@
 import React from 'react';
+import Path from '../components/path';
 
 function Explore() {
 	return (
 		<div className="App">
-			<p>Explore</p>
+			<Path name="Explore" text="Browse and participate in onchain peer launches."/>
 		</div>
 	);
 }

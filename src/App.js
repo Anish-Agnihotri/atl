@@ -1,5 +1,4 @@
 import React from 'react';
-import Web3 from 'Web3';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 // Global header setup
@@ -9,8 +8,6 @@ import Header from './components/header';
 import Home from './pages/Home/Home';
 import Dashboard from './pages/Dashboard';
 import Explore from './pages/Explore';
-
-// Web3 setup
 
 function App() {
   return (

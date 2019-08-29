@@ -1,0 +1,25 @@
+.path {
+	background-color: #fbfbfb;
+	width: 100%;
+	display: inline-block;
+	padding: 5px 0px 20px 0px;
+}
+
+.path > div > h2 {
+	font-size: 30px;
+}
+
+.path > div > p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: -15px;
+}
+
+@media screen and (max-width: 800px) {
+	.path {
+		padding: 5px 20px 20px 20px;
+	}
+	.path > div {
+		margin-right: 40px;
+	}
+}

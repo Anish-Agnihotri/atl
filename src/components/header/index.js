@@ -64,7 +64,7 @@ class Header extends React.Component {
 		return(
 			<div className="header">
 				<div className="subheader">
-					<span>Questions? Read the <a href='https://google.com' rel='noopener noreferrer' target='_blank'>documentation</a>.</span>
+					<span>Questions? Read the <a href='https://github.com/anish-agnihotri/atl' rel='noopener noreferrer' target='_blank'>documentation</a>.</span>
 				</div>
 				<div className="mainheader">
 					<div>
