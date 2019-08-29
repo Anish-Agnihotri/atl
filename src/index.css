@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +6,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .pageItem {
-  max-width: 1200px;
+  padding: 0px 40px 0px 40px;
+}
+
+.sectionItem {
+  width: 100%;
   display: inline-block;
+}
+
+/* Responsiveness */
+@media screen and (min-width: 1400px) {
+	.pageItem {
+    width: 1125px;
+    margin-left: calc(50% - 565px);
+    padding: 0px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+  .pageItem {
+    padding: 0px 10px 0px 10px;
+  }
 }
