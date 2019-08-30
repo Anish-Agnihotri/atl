@@ -73,8 +73,8 @@ class Header extends React.Component {
 					<div>
 						<ul>
 							<li><NavLink exact to="/" activeClassName="activeLink">Home</NavLink></li>
-							<li><NavLink to='/dashboard' activeClassName="activeLink">Dashboard</NavLink></li>
-							<li><NavLink to='/explore' activeClassName="activeLink">Explore</NavLink></li>
+							<li><NavLink to="/dashboard" activeClassName="activeLink">Dashboard</NavLink></li>
+							<li><NavLink to="/explore" activeClassName="activeLink">Explore</NavLink></li>
 							<li><a className="loginMetaMask" href='https://google.com'>Login via MetaMask</a></li>
 						</ul>
 						{
@@ -100,8 +100,8 @@ class Header extends React.Component {
 								<div>
 									<ul>
 										<li><NavLink exact to="/" activeClassName="activeLink">Home</NavLink></li>
-										<li><NavLink to='/dashboard' activeClassName="activeLink">Dashboard</NavLink></li>
-										<li><NavLink to='/explore' activeClassName="activeLink">Explore</NavLink></li>
+										<li><NavLink to="/dashboard" activeClassName="activeLink">Dashboard</NavLink></li>
+										<li><NavLink to="/explore" activeClassName="activeLink">Explore</NavLink></li>
 										<li><a className="loginMetaMask" href='https://google.com'>Login via MetaMask</a></li>
 									</ul>
 								</div>
