@@ -4,30 +4,61 @@ import './index.css'
 
 // Step imports
 import Introduction from './formSteps/introduction';
+import CreateSwap from './formSteps/createSwap';
+import CreatePeer from './formSteps/createPeer';
+import SetPeerRule from './formSteps/setPeerRule';
 
 class DashboardProtocol extends React.Component {
 	constructor() {
 		super();
 
 		this.state = {
-			modalOpen: false
+			modalOpen: false,
+			modalTab: 0,
 		}
 
+		// Handle modal
 		this.openModal = this.openModal.bind(this);
 		this.closeModal = this.closeModal.bind(this);
+		
+		// Handle modal tabs
+		this.tabForward = this.tabForward.bind(this);
+		this.tabBackward = this.tabBackward.bind(this);
+		this.renderTab = this.renderTab.bind(this);
 	}
 
 	/* Modal setup */
 	openModal() {
-		console.log("checking this works");
 		this.setState({ modalOpen: true })
 	}
 
 	closeModal() {
-		console.log("modal is closed");
-		this.setState({ modalOpen: false })
+		this.setState({ modalOpen: false, modalTab: 0 })
+	}
+
+	tabForward() {
+		this.setState({ modalTab: this.state.modalTab + 1});
+	}
+	tabBackward() {
+		this.setState({ modalTab: this.state.modalTab - 1 });
 	}
 	
+	// TODO: Refactor to Switch?
+	renderTab() {
+		if (this.state.modalTab === 0) {
+			return <Introduction tabForward={this.tabForward}/>;
+		}
+		else if (this.state.modalTab === 1) {
+			return <CreateSwap tabBackward={this.tabBackward} tabForward={this.tabForward}/>;
+		}
+		else if (this.state.modalTab === 2) {
+			return <CreatePeer tabBackward={this.tabBackward} tabForward={this.tabForward}/>;
+		}
+		else if (this.state.modalTab === 3) {
+			return <SetPeerRule tabBackward={this.tabBackward} tabForward={this.tabForward}/>;
+		}
+	}
+
 	render(props) {
 		return(
 			<div>
@@ -48,7 +79,7 @@ class DashboardProtocol extends React.Component {
 					}}
 					center
 				>
-					<Introduction />
+					{ this.renderTab() }
 				</Modal>
 			</div>
 		);

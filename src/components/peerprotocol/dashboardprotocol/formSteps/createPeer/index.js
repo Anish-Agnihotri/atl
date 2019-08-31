@@ -1,13 +1,13 @@
 import React from 'react';
 
 // TODO: Create component for three rules and animate.
-class CreateSwap extends React.Component {
-	render(props) {
+class CreatePeer extends React.Component {
+	render() {
 		return(
 			<div>
 				<div>
-					<h1>1. Create a Swap</h1>
-					<p>First, let's create a swap contract for your Token.</p>
+					<h1>2. Generate Peer</h1>
+					<p>Next, let's generate your onchain Peer contract.</p>
 				</div>
 				<div>
 					<button onClick={this.props.tabBackward}>Back</button>
@@ -18,4 +18,4 @@ class CreateSwap extends React.Component {
 	}
 }
 
-export default CreateSwap;
+export default CreatePeer;
