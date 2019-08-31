@@ -75,7 +75,7 @@ class Header extends React.Component {
 							<li><NavLink exact to="/" activeClassName="activeLink">Home</NavLink></li>
 							<li><NavLink to="/dashboard" activeClassName="activeLink">Dashboard</NavLink></li>
 							<li><NavLink to="/explore" activeClassName="activeLink">Explore</NavLink></li>
-							<li><a className="loginMetaMask" href='https://google.com'>Login via MetaMask</a></li>
+							<li><a className="loginMetaMask" href='https://airswap.io'>Visit AirSwap</a></li>
 						</ul>
 						{
 							this.state.showMenuIcon
@@ -102,7 +102,7 @@ class Header extends React.Component {
 										<li><NavLink exact to="/" activeClassName="activeLink">Home</NavLink></li>
 										<li><NavLink to="/dashboard" activeClassName="activeLink">Dashboard</NavLink></li>
 										<li><NavLink to="/explore" activeClassName="activeLink">Explore</NavLink></li>
-										<li><a className="loginMetaMask" href='https://google.com'>Login via MetaMask</a></li>
+										<li><a className="loginMetaMask" href='https://airswap.io'>Visit AirSwap</a></li>
 									</ul>
 								</div>
 							)

@@ -1,6 +1,6 @@
 .path {
 	background-color: #fbfbfb;
-	width: 100%;
+	width: 100vw;
 	display: inline-block;
 	padding: 5px 0px 20px 0px;
 }
@@ -16,6 +16,9 @@
 }
 
 @media screen and (max-width: 800px) {
+	.path {
+		width: calc(100vw - 40px);
+	}
 	.path {
 		padding: 5px 20px 20px 20px;
 	}
